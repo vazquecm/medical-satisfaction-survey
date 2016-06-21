@@ -2,6 +2,8 @@
 
 const express = require('express');
 
+const partials = require('partials');
+
 // const models = require('./models/');
 
 const PORT = process.env.PORT || 3000;
@@ -14,6 +16,11 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('partials', (req, res) => {
+  res.send({
+
+  })
+})
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
